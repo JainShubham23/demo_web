@@ -41,6 +41,9 @@ h3{
     font-size: var(--h3-size);
     font-weight: 500;
 }
+h3 span{
+    color: #ff375f;
+}
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -205,6 +208,19 @@ a:hover{
     #home-img-lg{
         display: none;
     }
+}
+.launch-time{
+    display: flex;
+    
+}
+.launch-time div{
+    flex-basis: 100px;
+    margin-right: 10px;
+}
+.launch-time div p{
+    font-size: 40px;
+    
+    
 }
 
 /* <===================TIMELINE===================> */
