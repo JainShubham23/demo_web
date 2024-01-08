@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b12bcc245.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>Wedding Invite</title>
+</head>
+<body>
+
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">S&S</label>
+        <ul class="text">
+            <li><a href="#story" onclick="myFunction()">OUR STORY</a></li>
+            <li><a href="#stay" onclick="myFunction()">TRAVEL & STAY</a></li>
+            <li><a href="#registry" onclick="myFunction()">PROMISES</a></li>
+        </ul>
+    </nav>
+
+    
+    
+
+    <audio id="my_audio" autoplay>
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+    <div class="home hz-margin">
+        <h3>We are getting married</h3>
+        <h1>Shubham & Shreya</h1>
+        <div class="container-out">
+            
+            <div class="container-in text">
+                Day, Month. XX, 2024 <br>
+                Place, City
+
+                <!-- <button class="huge-btn">RSVP</button> -->
+            </div>
+            <div class="home-img" id="home-img-lg"></div>
+        </div>
+    </div>
+
+
+    <div class="home-img home-img-sm"></div>
+    <div class="timeline hz-margin reveal">
+        <h2>Celebrating Our Love <br>
+            With Those We Love
+        </h2>
+        <div class="timeline-container">
+            <div class="timeline-img"></div>
+            <div class="timings">
+                <h3>01.&nbsp &nbsp Sagai</h3>
+                <div class="text">DAY, MONTH. XX, 2024 <br>
+                    PLACE, CITY</div>
+                <h3>02.&nbsp &nbsp Sangeet & Mehndi</h3>
+                <div class="text">DAY, MONTH. XX, 2024 <br>
+                    PLACE, CITY</div>
+                <h3>03.&nbsp &nbsp Haldi</h3>
+                <div class="text">DAY, MONTH. XX, 2024 <br>
+                    PLACE, CITY</div>
+                <h3>04.&nbsp &nbsp Nasho ka samay</h3>
+                    <div class="text">DAY, MONTH. XX, 2024 <br>
+                        PLACE, CITY</div>
+                <h3>05.&nbsp &nbsp Shadi</h3>
+                <div class="text">DAY, MONTH. XX, 2024 <br>
+                    PLACE, CITY</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="v-reposition-container">
+        <div class="h-reposition-container">
+
+
+            <div id="story" class="hz-margin">
+                <h3 class="reveal">Not Just an <br>
+                    Ordinary Love Story
+                </h3>
+                <p class="text reveal">
+                    Once upon a time blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                    blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+                </p>
+            </div>
+
+
+            <div class="gallery hz-margin reveal">
+                <div class="gallery-img"></div>
+                <div class="gallery-img"></div>
+                <div class="gallery-img"></div>
+            </div>
+
+
+            <div class="quote reveal">
+                <h1>“Love is an endless mystery, for it has nothing else to explain it.”.</h1>
+                <div class="author text">Rabindranath Tagore</div>
+            </div>
+
+
+            <div class="hands" id="parallax1"></div>
+
+
+            <div id="stay">
+                <h2 class="reveal">Wedding venue</h2>
+                <!-- <div class="stay-container reveal"> -->
+                    <!-- <div class="stay-item">
+                        <h3>01. <br>
+                            Getting There
+                        </h3>
+                        <div class="text">Easy-to-follow <br> directions to the venue</div>
+                        <div class="text links">MAP & DETAILS</div>
+                    </div> -->
+                    <!-- <div class="stay-item">
+                        <h3>02. <br>
+                            Once You're There
+                        </h3>
+                        <div class="text">Some fun things to do in <br> the area</div>
+                        <div class="text links">OUR RECOMMENDATIONS</div>
+                    </div>
+                    <div class="stay-item">
+                        <h3>03. <br>
+                            Where to Stay
+                        </h3>
+                        <div class="text">Hotels and B&Bs <br> to check out</div>
+                        <div class="text links">LODGING OPTIONS</div>
+                    </div> -->
+                    
+                <!-- </div> -->
+                <br/><br/><br/>
+                <div class="wrapper" id="location">
+                    <section>
+                        <p><a target="_blank" href="http://www.darvercastle.ie/">TBD</a>
+                        </p>
+                        <p></p>
+                        <p><b>Address:</b>XXX, XXX, XXXXXXXX, CITY, STATE</p>
+                        <p><b>SatNav co-ordinates:</b> XXX XXXX XXXX </p> <!--N53° 55.686' W006° 27.865' -->
+                        <div class="google-maps" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+                            <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.332583165201!2d-6.471940683869006!3d53.92583498010449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cadef178ae9f%3A0xaec6ef90c66d7159!2sDarver+Castle!5e0!3m2!1sen!2suk!4v1457560104908"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen>
+                            </iframe> -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786541130473!2d55.27179611205264!3d25.197196977617992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sus!4v1704667984404!5m2!1sen!2sus" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+
+
+            <div id="registry">
+                <div class="registry-container reveal">
+                    <h3>Promises</h3>
+                    <div class="text">
+                        In the radiant glow of this moment, I stand before you, my love, with a heart full of promises destined to endure a lifetime. 
+                        I promise to be your steadfast partner, your confidant, and your unwavering support through the tapestry of our shared existence. 
+                        In the laughter that echoes through our days, I vow to find joy in your happiness and solace in your sorrows. With every sunrise and sunset,
+                        I pledge my loyalty, promising to stand by your side through the ebb and flow of life's tides. 
+                        I promise to be a source of strength when the journey gets tough, a wellspring of love in times of need, and a constant companion on the 
+                        winding road of our shared destiny. With this ring, I seal these promises, binding my heart to yours, in a union that transcends time, 
+                        and a love that will only deepen as the years unfold. Today, I make these vows, not only as your partner but as the keeper of our shared 
+                        dreams and the guardian of the love we nurture together.
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    
+                    <a href = "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                        Download = "test_image">
+                    <button class="huge-btn text" onclick="confetti()">DOWNLOAD WEDDING CARD</button>
+                    </a>
+                    
+                    <button class="huge-btn text" onclick="">WATCH WEDDING CEREMONY</button>
+                </div>
+                <div class="registry-img registry-img-lg" id="parallax2"></div>
+            </div>
+            <div class="registry-img registry-img-sm"></div>
+
+
+            <div class="parting-message reveal">
+                <h1>Hope to See You!</h1>
+                <!-- <button class="huge-btn">RSVP</button> -->
+            </div>
+
+
+            <footer>
+                <h2>Give us a Call</h2>
+                <h2>Shubham: 123-456-7890</h2>
+                <h2>Shreya: 123-456-7890</h2>
+                <div class="text">© 2024 Made by <a href="https://twitter.com/jainshubam23" class="text">@Jainshubham23</a></div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
